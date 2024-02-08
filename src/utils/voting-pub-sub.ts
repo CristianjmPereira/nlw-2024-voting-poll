@@ -2,24 +2,24 @@ type Message = { pollOptionId: string; votes: number };
 type Subscriber = (data: any) => void;
 
 class VotingPubSub {
-  private chanel: Record<string, Subscriber[]> = {};
+  private channels: Record<string, Subscriber[]> = {};
 
   subscribe(pollId: string, subscriber: Subscriber) {
-    if (!this.chanel[pollId]) {
-      this.chanel[pollId] = [];
+    if (!this.channels[pollId]) {
+      this.channels[pollId] = [];
     }
 
     console.log("Subscribing to ", pollId);
-    this.chanel[pollId].push(subscriber);
+    this.channels[pollId].push(subscriber);
   }
 
   publish(pollId: string, message: Message) {
-    if (!this.chanel[pollId]) {
+    if (!this.channels[pollId]) {
       return;
     }
 
     console.log("Publishing message to ", pollId, " subscribers", message);
-    this.chanel[pollId].forEach((subscriber) => subscriber(message));
+    this.channels[pollId].forEach((subscriber) => subscriber(message));
   }
 }
 
