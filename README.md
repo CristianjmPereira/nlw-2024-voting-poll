@@ -12,10 +12,17 @@ This project is part of the NWL Expert Node.js course. It's a voting poll applic
 - Fastify: A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture.
 - Prisma: A modern database ORM toolkit used to access databases in Node.js and TypeScript.
 
-Stay tuned for more updates!
+## 📝 Stay Tuned
 
-Useful commands
-```npx prisma studio```
-```npx prisma migrate dev```
-```npm run dev```
-```docker-compose up -d```
+We're constantly working on improving this project and adding new features. Stay tuned for more updates!
+
+## 💻 Useful Commands
+
+Here are some commands that you might find useful:
+
+- `npx prisma studio`: Opens the Prisma Studio, a visual interface for your database.
+- `npx prisma migrate dev`: Applies database migrations.
+- `npm run dev`: Starts the development server.
+- `docker-compose up -d`: Starts the Docker containers in the background.
+
+Please ensure that you have the necessary environment set up before running these commands.
