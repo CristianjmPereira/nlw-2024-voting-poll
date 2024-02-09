@@ -14,7 +14,7 @@ This project is part of the NWL Expert Node.js course. It's a voting poll applic
 
 Stay tuned for more updates!
 
-Usefull commands
+Useful commands
 ```npx prisma studio```
 ```npx prisma migrate dev```
 ```npm run dev```
