@@ -2,7 +2,7 @@
 
 This project is part of the NWL Expert Node.js course. It's a voting poll application that uses a variety of technologies to provide a real-time, interactive voting system.
 
-## Technologies Used
+## 🚀 Technologies Used
 
 - Docker: Used for creating isolated environments to run the application.
 - Node.js: The main runtime environment for the server-side logic.
